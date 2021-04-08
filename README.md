@@ -3,6 +3,18 @@
 Le groupe **Koha-ABES de l'Hackaton Koha 2021** a évalué les **services web de
 l'ABES** dans la perspective de leur utilisation depuis le SIGB Koha. 
 
+![Abes](img/logo-abes.svg)
+![KohaLa](img/logo-kohala.png)
+
+CONTENU :
+
+- [Groupe Koha/ABES](#groupe-kohaabes)
+  - [Participants](#participants)
+  - [Bilan](#bilan)
+    - [Fonctionnalités unifiées](#fonctionnalités-unifiées)
+    - [Notices biblio](#notices-biblio)
+    - [Notices d'autorité](#notices-dautorité)
+  
 ## Participants
 
 - ABES :
@@ -12,7 +24,7 @@ l'ABES** dans la perspective de leur utilisation depuis le SIGB Koha.
 - KohaLa :
   - Aurore Sorieux, aurore.sorieux@univ-rennes2.fr
   - Asyeh Ghafourian, asyeh.ghafourian@bulac.fr
-  - olivier Delangle, olivier.delangle@univ-amu.fr
+  - Olivier Delangle, olivier.delangle@univ-amu.fr
   - Julien Sicot, julien.sicot@univ-rennes2.fr
   - Sonia Bouis, sonia.bouis@univ-lyon3.fr
   - Frédéric Demians, f.demians@tamil.fr
