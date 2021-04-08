@@ -20,9 +20,12 @@ l'ABES** dans la perspective de leur utilisation depuis le SIGB Koha.
 
 Services Web considérés :
 
-- multiwhere
-- bibliocontrol
-- AlgoLiens
+- [multiwhere](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#multiwhere)
+- [merged](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#merged)
+- [bibliocontrol](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#BiblioControl)
+- [AlgoLiens](http://documentation.abes.fr/sudoc/manuels/controle_bibliographique/algoliens/index.html)
+- [API SRU BNF](https://api.bnf.fr/fr/api-sru-catalogue-general)
+- Vue XML notice SUDOC : https://www.sudoc.fr/{PPN}.xml
 
 Autre outil étudié : [Checksudoc](http://domybiblio.net/check_sudoc/), développé
 par Yves Tomic.
@@ -95,7 +98,7 @@ sont détectées comme des erreurs :
 **Divers**
 
 - **7xx selon $4** — Possibilité, en fonction de certains codes de fonction, de
-  repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
+  repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
   préfacier (code fonction 080) doit être en 702 et pas en 700 ou 701 Un
   commissaire priseur (code fonction 065) doit être en 700 ou 701 et pas en 702
 
