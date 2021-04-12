@@ -1,6 +1,6 @@
 # Groupe Koha/ABES
 
-Le groupe **Koha-ABES de l'Hackaton Koha 2021** a évalué les **services web de
+Le groupe **Koha-ABES de l'Hackathon Koha 2021** a évalué les **services web de
 l'ABES** dans la perspective de leur utilisation depuis le SIGB Koha. 
 
 ![Abes](img/logo-abes.svg)
@@ -18,8 +18,8 @@ CONTENU :
 ## Participants
 
 - ABES :
-  - Michael Serror
-  - Thomas Michaux
+  - Mickaël Seror, seror@abes.fr
+  - Thomas Michaux, michaux@abes.fr
   - François Mistral, mistral@abes.fr
 - KohaLa :
   - Aurore Sorieux, aurore.sorieux@univ-rennes2.fr
@@ -39,8 +39,8 @@ Services Web considérés :
 - [API SRU BNF](https://api.bnf.fr/fr/api-sru-catalogue-general)
 - Vue XML notice SUDOC : https://www.sudoc.fr/{PPN}.xml
 
-Autre outil étudié : [Checksudoc](http://domybiblio.net/check_sudoc/), développé
-par Yves Tomic.
+Autres outils étudiés : [Checksudoc](http://domybiblio.net/check_sudoc/), développé
+par Yves Tomic et [e-PPNator](http://akareup.alwaysdata.net/controlequalite.html)
 
 ## Bilan
 
@@ -56,18 +56,18 @@ AlgoLiens) gagneraient à être unifiées :
 - **JSON** — Réponses de bibliocontrol et AlgoLiens en JSON. Cela facilite la 
   consommation des services web par les applications, comme un plugin Koha.
 
-- **Filtrage** par ILN/RCR/PPN. Le filtrage par PPN manque à bibliocontrol et
-  AlogLiens. Le filtrage par PPN est nécessaire pour proposer des services
-  d'indentification des anomalies de catalogage directement depuis Koha, en
+- **Filtrage** par ILN/RCR/PPN et Unica. Le filtrage par PPN manque à bibliocontrol et
+  AlgoLiens. Le filtrage par PPN est nécessaire pour proposer des services
+  d'identification des anomalies de catalogage directement depuis Koha, en
   affichage d'une notice ou dans un rapport de chargement quotidien de notices.
 
 - **Autorités** — AlgoLiens détecte des anomalies de catalogage des autorités.
   Sur ce modèle, _bibliocontrol_ pourrait détecter des anomalies dans les
-  autorités.
+  notices bibliographiques.
+  
+### Notices bibliographiques
 
-### Notices biblio
-
-Les anomalies qui doivent être repérées dans les notices biblio :
+Les anomalies qui doivent être repérées dans les notices bibliographiques :
 
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
 détectée :
@@ -76,7 +76,6 @@ détectée :
 - 181
 - 182
 - 183
-- 6xx $2
   
 **Zones interdites** — La présence de certaines zones est détectée comme étant
 une anomalie :
@@ -84,12 +83,12 @@ une anomalie :
 - 309
 
 **Sous-zones de liens**
-- Vers autorités :
+- Vers notices d'autorités :
   - 500 $3 
   - 6xx $3 (si $2 = 'rameau' ou 'Fmesh')
   - 7xx $3
-- Vers notices :
-  - 419 $0
+- Vers notices bibliographiques :
+  - 410 $0
 
 **Conditionnels** — Les conditions suivantes (on pourrait leur trouver un nom)
 sont détectées comme des erreurs :
@@ -119,10 +118,10 @@ sont détectées comme des erreurs :
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
 détectée :
 
-- 200$9
-- 200$c (à confirmer avec le pôle Autorités de l’Abes)
-- 400$9
-- 810
+- 200 $9
+- 200 $c (à confirmer avec le pôle Autorités de l’Abes)
+- 400 $9
+- 810 $a
 
 **Conditionnels** — Les conditions suivantes (on pourrait leur trouver un nom)
 sont détectées comme des erreurs :
