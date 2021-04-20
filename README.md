@@ -95,12 +95,12 @@ sont détectées comme des erreurs :
 
 | Zone  | Condition                                     |
 | ----- | --------------------------------------------- |
-| 100   | $a contient 'X' ET ind1 <> 1                  |
+| 100   | $a contient 'X' ET ind1 = 0                  |
 | 104   | $d <> 'ba' ET $c = 'y'                        |
 | 104   | $f <> 'fr'                                    |
 | 200   | $b <> ''                                      |
-| 200   | $f <> '' ET pas_de_zone(7xx)                  |
-| 241   | absence(214) ET notice < 'janvier 2020'       |
+| 200   | $f <> '' ET pas_de_zone(7xx)                 |
+| 214   | absence(214) ET notice < 'janvier 2020'       |
 | 210/4 | type_doc ∈ (Ab, Ad, Ob, Od) ET absence(214) (ou 210 avant 1/1/2020) |
 | 225   | présence(225) ET absence(410) ET absence(461) |
 | 410   | présence(410) ET absence(225)                 |
