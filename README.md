@@ -77,9 +77,10 @@ détectée :
 - 182
 - 183
   
-**Zones interdites** — La présence de certaines zones est détectée comme étant
+**Zones ous sous-zones interdites** — La présence de certaines zones ou sous-zones est détectée comme étant
 une anomalie :
 
+- 200 $b
 - 309
 
 **Sous-zones de liens**
@@ -97,8 +98,7 @@ sont détectées comme des erreurs :
 | ----- | --------------------------------------------- |
 | 100   | $a contient 'X' ET ind1 = 0                  |
 | 104   | $d <> 'ba' ET $c = 'y'                        |
-| 104   | $f <> 'fr'                                    |
-| 200   | $b <> ''                                      |
+| 104   | $f <> 'fr'                                    |                                      |
 | 200   | $f <> '' ET pas_de_zone(7xx)                 |
 | 214   | absence(214) ET notice < 'janvier 2020'       |
 | 210/4 | type_doc ∈ (Ab, Ad, Ob, Od) ET absence(214) (ou 210 avant 1/1/2020) |
