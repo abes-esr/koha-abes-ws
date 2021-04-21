@@ -72,7 +72,7 @@ Les anomalies qui doivent être repérées dans les notices bibliographiques :
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
 détectée :
 
-- 106 $a 'y' et 'B'
+- 106 $a
 - 181
 - 182
 - 183
@@ -80,7 +80,7 @@ détectée :
 **Zones ou sous-zones interdites** — La présence de certaines zones ou sous-zones est détectée comme étant
 une anomalie :
 
-- 008 $a codes y et B
+- 008 $a 'y' et 'B'
 - 200 $b
 - 210 sauf type doc Ab, Ad, Ob, Od pour notices créées avant 01/01/2020
 - 309
