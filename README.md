@@ -81,6 +81,7 @@ détectée :
 une anomalie :
 
 - 200 $b
+- 210 sauf type doc Ab, Ad, Ob, Od pour notices créées avant 01/01/2020
 - 309
 
 **Sous-zones de liens**
@@ -96,15 +97,15 @@ sont détectées comme des erreurs :
 
 | Zone  | Condition                                     |
 | ----- | --------------------------------------------- |
-| 100   | $a contient 'X' ET ind1 = 0                  |
+| 100   | $a contient 'X' ET ind1 = 0                   |
 | 104   | $d <> 'ba' ET $c = 'y'                        |
-| 104   | $f <> 'fr'                                    |                                      |
-| 200   | $f <> '' ET pas_de_zone(7xx)                 |
-| 214   | absence(214) ET notice < 'janvier 2020'       |
-| 210/4 | type_doc ∈ (Ab, Ad, Ob, Od) ET absence(214) (ou 210 avant 1/1/2020) |
-| 225   | présence(225) ET absence(410) ET absence(461) |
-| 410   | présence(410) ET absence(225)                 |
-| 7xx   | $4 = '000'                                    |
+| 104   | $f <> 'fr'                                    |                                      
+| 200   | $f ET absence (7XX)                           |
+| 225   | présence (225) ET absence (410) OU absence (461)|
+| 410   | présence (410) ET absence(225)                 |
+| 7XX   | présence (7XX) et absence 200 $f
+| 700   | présence(700) ET présence 710 ou 720          |
+| 7XX   | $4 = '000'                                    |
 
 **Divers**
 
