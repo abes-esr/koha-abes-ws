@@ -72,23 +72,26 @@ Les anomalies qui doivent être repérées dans les notices bibliographiques :
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
 détectée :
 
-- 106 $a
+- 106 $a 'y' et 'B'
 - 181
 - 182
 - 183
   
-**Zones ous sous-zones interdites** — La présence de certaines zones ou sous-zones est détectée comme étant
+**Zones ou sous-zones interdites** — La présence de certaines zones ou sous-zones est détectée comme étant
 une anomalie :
 
+- 008 $a
 - 200 $b
 - 210 sauf type doc Ab, Ad, Ob, Od pour notices créées avant 01/01/2020
 - 309
 
-**Sous-zones de liens**
+**Sous-zones de liens** L'absence de liens est détectée comme étant une anomalie :
+
 - Vers notices d'autorités :
   - 500 $3 
-  - 6xx $3 (si $2 = 'rameau' ou 'Fmesh')
-  - 7xx $3
+  - 6XX $3 (si $2 = 'rameau' ou 'Fmesh')
+  - 7XX $3
+  
 - Vers notices bibliographiques :
   - 410 $0
 
@@ -100,18 +103,18 @@ sont détectées comme des erreurs :
 | 100   | $a contient 'X' ET ind1 = 0                   |
 | 104   | $d <> 'ba' ET $c = 'y'                        |
 | 104   | $f <> 'fr'                                    |                                      
-| 200   | $f ET absence (7XX)                           |
+| 200   | présence $f ET absence (7XX)                  |
 | 225   | présence (225) ET absence (410) OU absence (461)|
-| 410   | présence (410) ET absence(225)                 |
-| 7XX   | présence (7XX) et absence 200 $f
-| 700   | présence(700) ET présence 710 ou 720          |
+| 410   | présence (410) ET absence(225)                |
+| 7XX   | présence (7XX) ET absence (200 $f)            |
+| 700   | présence (700) ET présence 710 ou 720         |
 | 7XX   | $4 = '000'                                    |
 
 **Divers**
 
-- **7xx selon $4** — Possibilité, en fonction de certains codes de fonction, de
+- **7XX selon $4** — Possibilité, en fonction de certains codes de fonction, de
   repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
-  préfacier (code fonction 080) doit être en 702 et pas en 700 ou 701 Un
+  préfacier (code fonction 080) doit être en 702 et pas en 700 ou 701 ; un
   commissaire priseur (code fonction 065) doit être en 700 ou 701 et pas en 702
 
 ### Notices d'autorité
