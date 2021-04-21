@@ -85,7 +85,7 @@ une anomalie :
 - 210 sauf type doc Ab, Ad, Ob, Od pour notices créées avant 01/01/2020
 - 309
 
-**Sous-zones de liens** L'absence de liens est détectée comme étant une anomalie :
+**Sous-zones de liens** — L'absence de liens est détectée comme étant une anomalie :
 
 - Vers notices d'autorités :
   - 500 $3 
@@ -105,7 +105,7 @@ sont détectées comme des erreurs :
 | 104   | $f <> 'fr'                                    |                                      
 | 200   | présence $f ET absence (7XX)                  |
 | 225   | présence (225) ET absence (410) OU absence (461)|
-| 410   | présence (410) ET absence(225)                |
+| 410   | présence (410) ET absence (225)               |
 | 7XX   | présence (7XX) ET absence (200 $f)            |
 | 700   | présence (700) ET présence 710 ou 720         |
 | 7XX   | $4 = '000'                                    |
@@ -113,6 +113,8 @@ sont détectées comme des erreurs :
 **Divers**
 
 - **100 $a et 214 (ou 210)** — Possibilité de détecter que la date enregistrée en 100 $a concorde avec la date indiquée en 214 (ou 210) ?
+
+- **Utilisation Tf** — Possibilité de détecter qu'une Tf est employée dans une zone 6XX autre que 608 (vérification ensuite pour voir si la forme constitue le sujet ?
 
 - **7XX selon $4** — Possibilité, en fonction de certains codes de fonction, de
   repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
