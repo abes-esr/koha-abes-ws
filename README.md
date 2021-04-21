@@ -80,7 +80,7 @@ détectée :
 **Zones ou sous-zones interdites** — La présence de certaines zones ou sous-zones est détectée comme étant
 une anomalie :
 
-- 008 $a
+- 008 $a codes y et B
 - 200 $b
 - 210 sauf type doc Ab, Ad, Ob, Od pour notices créées avant 01/01/2020
 - 309
@@ -100,7 +100,7 @@ sont détectées comme des erreurs :
 
 | Zone  | Condition                                     |
 | ----- | --------------------------------------------- |
-| 100   | $a contient 'X' ET ind1 = 0                   |
+| 100   | $a contient 'X' ET ind1 = 0                   | 
 | 104   | $d <> 'ba' ET $c = 'y'                        |
 | 104   | $f <> 'fr'                                    |                                      
 | 200   | présence $f ET absence (7XX)                  |
@@ -111,6 +111,8 @@ sont détectées comme des erreurs :
 | 7XX   | $4 = '000'                                    |
 
 **Divers**
+
+- **100 $a et 214 (ou 210)** — Possibilité de détecter que la date enregistrée en 100 $a concorde avec la date indiquée en 214 (ou 210) ?
 
 - **7XX selon $4** — Possibilité, en fonction de certains codes de fonction, de
   repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
