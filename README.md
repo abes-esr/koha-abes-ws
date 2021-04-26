@@ -67,6 +67,11 @@ AlgoLiens) gagneraient à être unifiées :
   
 ### Notices bibliographiques
 
+Nous nous sommes attachés dans ce document à repérer les anomalies qui peuvent concerner l'ensemble des types de documents signalés dans le Sudoc. Mais il serait peut-être intéressant de voir s'il serait possible, selon certains types de document, de repérer en plus les zones indispensables attendues. Ce repérage pourrait se faire soit sur la 008 et/ou les 181, 182 et 183. Exemples :
+
+- pour une carte : 008 (Ka) et/ou 181 $ccri. La notice doit avoir la zone 206 (données mathématiques)
+- pour une ressource électronique : 008 (Oa, Ob etc.) et/ou 182 $cc. La notice doit avoir la zone 230 et les différentes zones de notes (303, 304, 307, 337 etc.)
+
 Les anomalies qui doivent être repérées dans les notices bibliographiques :
 
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
