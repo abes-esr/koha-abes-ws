@@ -121,8 +121,8 @@ sont détectées comme des erreurs :
 
 - **Utilisation Tf** — Possibilité de détecter qu'une Tf est employée dans une zone 6XX autre que 608 (vérification ensuite pour voir si la forme constitue le sujet ?)
 
-- **7XX selon $4** — Possibilité, en fonction de certains codes de fonction, de
-  repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
+- **7XX selon $4** — Possibilité, selon certains codes de fonction, de
+  repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : un
   préfacier (code fonction 080) doit être en 702 et pas en 700 ou 701 ; un
   commissaire priseur (code fonction 065) doit être en 700 ou 701 et pas en 702
 
