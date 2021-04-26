@@ -143,7 +143,7 @@ sont détectées comme des erreurs :
 
 | Zone  | Condition                                     |
 | ----- | --------------------------------------------- |
-| 103   | $a et $b ne contiennent pas [0-9X] (chiffres arabes et la lettre X) |
+| 103   | $a et $b contiennent autres caractères que [0-9X] (chiffres arabes et la lettre X) |
 | 103   | $a='XXXX' OU $b='XXXX
 | 103   | présence $a OU $b ET absence (200 $f)
 | 106   | ($a, $b, $c) contient '#'                     |
