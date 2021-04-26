@@ -61,10 +61,11 @@ AlgoLiens) gagneraient à être unifiées :
   d'identification des anomalies de catalogage directement depuis Koha, en
   affichage d'une notice ou dans un rapport de chargement quotidien de notices.
 
-- **Autorités** — AlgoLiens détecte des anomalies de catalogage des autorités.
-  Sur ce modèle, _bibliocontrol_ pourrait détecter des anomalies dans les
-  notices bibliographiques.
-  
+- **Autorités** — AlgoLiens détecte dans les notices bibliographiques les zones où le lien est manquant vers une notice d'autorité. Il n'existe pas à l'heure actuelle un 
+webservice qui contrôle les anomalies dans les notices d'autorité.
+
+- **Webservice bibliocontrol** — Ce webservice contrôle actuellement que 3 zones : présence d'une 225 sans 410 ou 461 ; code de fonction 000 (code de fonction indéterminé) en zone 700, 701 ou 702 et la présence simultanée d'une zone 181 et d'une 200 $b.
+ 
 ### Notices bibliographiques
 
 Nous nous sommes attachés pour les notices bibliographiques à repérer les anomalies qui peuvent concerner l'ensemble des types de documents signalés dans le Sudoc. Mais il serait peut-être intéressant de voir s'il serait possible, selon certains types de document, de repérer en plus les zones indispensables attendues. Ce repérage pourrait se faire soit sur la 008 et/ou les 181, 182 et 183. Exemples :
