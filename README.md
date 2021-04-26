@@ -67,7 +67,7 @@ AlgoLiens) gagneraient à être unifiées :
   
 ### Notices bibliographiques
 
-Nous nous sommes attachés dans ce document à repérer les anomalies qui peuvent concerner l'ensemble des types de documents signalés dans le Sudoc. Mais il serait peut-être intéressant de voir s'il serait possible, selon certains types de document, de repérer en plus les zones indispensables attendues. Ce repérage pourrait se faire soit sur la 008 et/ou les 181, 182 et 183. Exemples :
+Nous nous sommes attachés pour les notices bibliographiques à repérer les anomalies qui peuvent concerner l'ensemble des types de documents signalés dans le Sudoc. Mais il serait peut-être intéressant de voir s'il serait possible, selon certains types de document, de repérer en plus les zones indispensables attendues. Ce repérage pourrait se faire soit sur la 008 et/ou les 181, 182 et 183. Exemples :
 
 - pour une carte : 008 (Ka) et/ou 181 $ccri. La notice doit avoir la zone 206 (données mathématiques)
 - pour une ressource électronique : 008 (Oa, Ob etc.) et/ou 182 $cc. La notice doit avoir la zone 230 et les différentes zones de notes (303, 304, 307, 337 etc.)
@@ -108,7 +108,7 @@ sont détectées comme des erreurs :
 | 100   | $a contient 'X' ET ind1 = 0                   | 
 | 104   | $d <> 'ba' ET $c = 'y'                        |
 | 104   | $f <> 'fr'                                    |                                      
-| 200   | présence $f ET absence (7XX)                  |
+| 200   | présence ($f) ET absence (7XX)                  |
 | 225   | présence (225) ET absence (410) OU absence (461)|
 | 410   | présence (410) ET absence (225)               |
 | 7XX   | présence (7XX) ET absence (200 $f)            |
@@ -128,6 +128,8 @@ sont détectées comme des erreurs :
 
 ### Notices d'autorité
 
+Nous nous sommes restreints pour les notices d'autorité à repérer les anomalies concernant les Personnes physiques.
+
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
 détectée :
 
@@ -142,9 +144,10 @@ sont détectées comme des erreurs :
 | Zone  | Condition                                     |
 | ----- | --------------------------------------------- |
 | 103   | $a et $b ne contiennent pas [0-9X] (chiffres arabes et la lettre X) |
-| 103   | $a='XXX' OU $b='XXX                           |
+| 103   | $a='XXXX' OU $b='XXXX
+| 103   | présence $a OU $b ET absence (200 $f)
 | 106   | ($a, $b, $c) contient '#'                     |
-| 200   | présence($f) ET absence(103)                  |
-| 300   | type_doc(Td) ET présence(300)                 |
-| 340   | type_doc(Td) ET absence(340)                  |
+| 200   | présence ($f) ET absence (103)                |
+| 300   | type_doc (Td) ET présence (300)               | 
+| 340   | type_doc (Td) ET absence (340)                |
 | 810   | contient @                                    |
