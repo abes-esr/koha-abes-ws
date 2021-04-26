@@ -128,7 +128,7 @@ sont détectées comme des erreurs :
 
 ### Notices d'autorité
 
-Nous nous sommes restreints pour les notices d'autorité à repérer les anomalies concernant les Personnes physiques.
+Nous nous sommes concentrés à repérer les anomalies concernant les Personnes physiques (Td).
 
 **Zones obligatoires** — L'absence de zones (ou sous-zones) obligatoires est
 détectée :
@@ -143,10 +143,12 @@ sont détectées comme des erreurs :
 
 | Zone  | Condition                                     |
 | ----- | --------------------------------------------- |
-| 103   | $a et $b contiennent autres caractères que [0-9X] (chiffres arabes et la lettre X) |
-| 103   | $a='XXXX' OU $b='XXXX
-| 103   | présence $a OU $b ET absence (200 $f)
-| 106   | ($a, $b, $c) contient '#'                     |
+| 103   | présence $a et $b qui contiennent autres caractères que [0-9X] (chiffres arabes et la lettre X) |
+| 103   | $a='XXXX' et $b='XXXX                         | 
+| 103   | présence $a et $b ET absence (200 $f)         | 
+| 106   | $a <> '0'                                     | 
+| 106   | $b <> '1'                                     | 
+| 106   | $c <> '0'                                     | 
 | 200   | présence ($f) ET absence (103)                |
 | 300   | type_doc (Td) ET présence (300)               | 
 | 340   | type_doc (Td) ET absence (340)                |
