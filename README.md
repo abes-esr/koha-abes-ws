@@ -119,7 +119,7 @@ sont détectées comme des erreurs :
 
 - **100 $a et 214 (ou 210)** — Possibilité de détecter que la date enregistrée en 100 $a concorde avec la date indiquée en 214 (ou 210) ?
 
-- **Utilisation Tf** — Possibilité de détecter qu'une Tf est employée dans une zone 6XX autre que 608 (vérification ensuite pour voir si la forme constitue le sujet ?
+- **Utilisation Tf** — Possibilité de détecter qu'une Tf est employée dans une zone 6XX autre que 608 (vérification ensuite pour voir si la forme constitue le sujet ?)
 
 - **7XX selon $4** — Possibilité, en fonction de certains codes de fonction, de
   repérer l’utilisation d’une mauvaise étiquette en 7XX ? Exemples : Un
