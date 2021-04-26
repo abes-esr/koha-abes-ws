@@ -40,7 +40,7 @@ Services Web considérés :
 - Vue XML notice SUDOC : https://www.sudoc.fr/{PPN}.xml
 
 Autres outils étudiés : [Checksudoc](http://domybiblio.net/check_sudoc/), développé
-par Yves Tomic et [e-PPNator](http://akareup.alwaysdata.net/controlequalite.html)
+par Yves Tomic et [e-PPNator](http://akareup.alwaysdata.net/controlequalite.html), développé par Pierre Marige
 
 ## Bilan
 
