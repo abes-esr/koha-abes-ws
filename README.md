@@ -14,6 +14,10 @@ CONTENU :
     - [Fonctionnalités unifiées](#fonctionnalités-unifiées)
     - [Notices biblio](#notices-biblio)
     - [Notices d'autorité](#notices-dautorité)
+
+## Conception et développement d'un plugin expérimental (par Tamil)
+
+- [Plugin KohaLa-Abes]https://github.com/AssoKohala/Koha-Plugin-KohaLa-AbesWS)
   
 ## Participants
 
