@@ -36,15 +36,41 @@ CONTENU :
 
 Services Web considérés :
 
-- [multiwhere](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#multiwhere)
-- [merged](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#merged)
-- [bibliocontrol](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#BiblioControl)
-- [AlgoLiens](http://documentation.abes.fr/sudoc/manuels/controle_bibliographique/algoliens/index.html)
-- [API SRU BNF](https://api.bnf.fr/fr/api-sru-catalogue-general)
-- Vue XML notice SUDOC : https://www.sudoc.fr/{PPN}.xml
+Voir : https://abes.fr/api-et-web-services/
+et : http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html
 
-Autres outils étudiés : [Checksudoc](http://domybiblio.net/check_sudoc/), développé
-par Yves Tomic et [e-PPNator](http://akareup.alwaysdata.net/controlequalite.html), développé par Pierre Marige
+-   [**Iln2rcr**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebIln2rcr.html) : renvoie la liste des n°RCR utilisant un même Système de Gestion de Bibliothèque (n°ILN)
+-   [**rcr2iln**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebRcr2iln.html) : renvoie les n°ILN de rattachement associés à une liste de [n°RCR](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebRcr2iln.html#kFootBsktN3f "RCR : Répertoire des Centre de Ressources (Infobulle)")
+-   [**merged**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebMerged.html) : renvoie l’identifiant d’une notice valide à partir de l’identifiant d’une notice devenue obsolète suite à fusion
+-   [**merged inversé**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebMerged_inv.html) : indique l’identifiant d’une notice devenue obsolète à partir de l’identifiant d’une notice valide, suite à une fusion
+-   [**BiblioControl**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#BiblioControl) Ce webservice fournit pour un RCR la liste des notices bibliographiques ayant au moins une anomalie au regard des contrôles effectués (puisqu'un même PPN peut en avoir plusieurs - il y aura de fait plusieurs lignes dans le rapport)
+-   [**multiwhere**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#multiwhere) Ce webservice permet de localiser (RCR de localisation) plusieurs documents à partir de leur identifiant (PPN)
+-  [**biblio**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebBiblio.html) : renvoie la liste des ressources bibliographiques Sudoc liées à une notice d’autorité
+-   [**idref2id**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWebIdref2id.html) : fournit les identifiants d’une dizaine d’autres systèmes (à spécifier dans la requête) à partir d’un identifiant IdRef
+-   [**id2idref**](http://documentation.abes.fr/aideidrefdeveloppeur/co/MicroWeb_ServiceId2idref.html) : fournit un identifiant IdRef à partir d’identifiants d’autres systèmes (à spécifier dans la requête)
+-   [**frbn2ppn / ocn2ppn / dnb2ppn / ucatb2ppn / frcairninfo2ppn**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/index.html#IdentifiantSudocExterne) : renvoient un identifiant de notice Sudoc (n°PPN) à partir d’un identifiant de notice issue d’une autre base
+-   [**isbn2ppn / ean2ppn / issn2ppn**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/IdentifiantSudoc.html) : renvoient les identifiants de notice Sudoc (n°PPN) à partir d’identifiants normalisés (ISBN, EAN, ISSN)
+-   [**métarevues**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/metarevues.html) : génère l’historique complet  d’une revue – imprimée et/ou électronique – à partir d’un identifiant notice Sudoc (n°PPN) 
+-   [**multiwhere**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/multiwhere.html) : liste les bibliothèques du réseau Sudoc possédant un même document
+-   [**nnt2ppn**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/MicroWebServiceNNT.html) : renvoie un identifiant de notice Sudoc (n°PPN) à partir du Numéro National de Thèses (NNT)
+-   [**ppn2nnt**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/MicroWebServiceNNT.html) : renvoie le Numéro National de Thèses (NNT) à partir d’un identifiant de notice Sudoc (n°PPN)
+-   [**unimarc2marcxml**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/SudocMarcXML.html) : à partir de leur n°PPN, les notices Sudoc en UNIMARC sont renvoyées au format MarcXML
+-   [**ppn2epn**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/MicroWebServicePPN2EPN.html) : renvoie le numéro d’exemplaire (EPN) lié à un RCR à partir d’un ou de plusieurs PPN
+-   [**id2kbart**](http://documentation.abes.fr/aidebacon/index.html#WebserviceId2) : permet de savoir à quel(s) bouquet(s) appartient un document en fonction de son identifiant
+-   [**AlgoLiens**](http://documentation.abes.fr/sudoc/manuels/controle_bibliographique/algoliens/) ce webservice permet à chaque bibliothèque du réseau Sudoc de savoir quelles sont les notices où manque un lien à une notice d'autorité dans leurs zones de liens
+
+
+Autres outils proposés par et pour la communauté autour de ces webservice : 
+- [Checksudoc](http://domybiblio.net/check_sudoc/), développé par Yves Tomic
+- [e-PPNator](http://akareup.alwaysdata.net/controlequalite.html), développé par Pierre Marige
+- [ezlibrapi](https://t.co/JS9YGntwRA), développé par université catholique de Lille
+- [Algoliens-web](https://github.com/abes-esr/algoliens-web), développé par Sylvain Machefert au sein de l'université Bordeaux Montaigne
+- [eplouribousse](https://eplouribousse1.di.unistra.fr/), développé et maintenu par l'université de Strasbourg
+- [KaliDoS (Qualité des Données du Sudoc)](https://github.com/abes-esr/kalidos),  développée par des étudiants du Master Informatique de l'Université Lyon 1, en collaboration avec la BU
+- [sudoc-toolkit](https://github.com/abes-esr/sudoc-toolkit), développé par Géraldine Geoffroy (SCD Université Nice Sophia Antipolis)
+- [Abacaxi - The Library Metadata Hub](https://github.com/nicomo/abacaxi), développé par Nicolas Morin
+- [VérifSudoc](https://applintern.scd.univ-paris-diderot.fr/verifsudoc/), développé par l'université de Paris
+
 
 ## Bilan
 
