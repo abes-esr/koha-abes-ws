@@ -58,6 +58,7 @@ et : http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/i
 -   [**ppn2epn**](http://documentation.abes.fr/sudoc/manuels/administration/aidewebservices/co/MicroWebServicePPN2EPN.html) : renvoie le numéro d’exemplaire (EPN) lié à un RCR à partir d’un ou de plusieurs PPN
 -   [**id2kbart**](http://documentation.abes.fr/aidebacon/index.html#WebserviceId2) : permet de savoir à quel(s) bouquet(s) appartient un document en fonction de son identifiant
 -   [**AlgoLiens**](http://documentation.abes.fr/sudoc/manuels/controle_bibliographique/algoliens/) ce webservice permet à chaque bibliothèque du réseau Sudoc de savoir quelles sont les notices où manque un lien à une notice d'autorité dans leurs zones de liens
+-   [**SciencePlus**](https://scienceplus.abes.fr/) La base de données scienceplus.abes.fr expose les métadonnées de corpus de publications scientifiques numériques (revues, ebooks, articles, chapitres) pour lesquelles l'Abes a obtenu le droit de réutilisation de la part des éditeurs, notamment dans le cadre des programmes d’achat de documentation sous licence nationale (ISTEX et CollEx-Persée).
 
 
 Autres outils proposés par et pour la communauté autour de ces webservice : 
